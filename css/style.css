@@ -1,0 +1,1173 @@
+    .clear {
+        clear: both;
+    }
+    
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('Montserrat-Regular.otf');
+        font-family: 'PlayfairDisplay';
+        src: url("PlayfairDisplay-Bold.otf");
+    }
+    /* /////header////// */
+    
+    header {
+        background-color: white;
+        position: fixed;
+        z-index: 3;
+        height: 100px;
+        width: 100%;
+    }
+    
+    #logo {
+        float: left;
+        margin-left: 10%;
+        margin-top: 20px;
+    }
+    
+    #logoswitch {
+        float: left;
+        margin-left: 10%;
+        margin-top: 20px;
+    }
+    
+    li {
+        float: right;
+        padding-right: 10%;
+    }
+    
+    li a {
+        text-decoration: none;
+        font-weight: 600;
+        color: rgb(29, 0, 255);
+    }
+    
+    ul {
+        font-size: 0.9em;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        list-style-type: none;
+        padding: 40px 30px;
+    }
+    
+    #intro {
+        position: inherit;
+        padding-top: 150px;
+        height: 500px;
+        width: 100%;
+        background: linear-gradient(0deg, rgb(0, 118, 255, 0.8), rgb(29, 0, 255, 0.8)), url(../img/daria-nepriakhina-736026-unsplash@2x.jpg);
+        background-size: cover;
+    }
+    
+    h1 {
+        font-family: 'Playfair Display';
+        font-weight: bold;
+        float: left;
+        font-size: 3.8em;
+        color: white;
+        margin-left: 20%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 1.5em;
+    }
+    
+    .introtekst {
+        /* position: initial; */
+        float: left;
+        width: 40%;
+        margin-left: 20%;
+        font-family: 'Montserrat';
+        line-height: 1.4em;
+        color: white;
+        font-weight: normal;
+    }
+    /*//////// body////////// */
+    
+    #playlist {
+        position: inherit;
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        margin-top: -100px;
+        background-color: white;
+    }
+    
+    h3 {
+        font-family: 'Montserrat';
+        font-weight: bold;
+        color: rgb(29, 0, 255);
+        padding-top: 50px;
+        margin-left: 6%;
+        padding-bottom: 30px;
+    }
+    /* //accordion */
+    /* //header accordion */
+    
+    h4 {
+        font-family: 'Montserrat';
+        font-weight: bold;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-left: 30px;
+    }
+    
+    .dicht,
+    .open,
+    .dichtswitch {
+        padding-right: 30px;
+    }
+    
+    .vink-button {
+        width: 80px;
+        height: 40px;
+        background-color: rgb(187, 255, 178);
+        border-radius: 50px;
+        border: none;
+        display: none;
+    }
+    
+    .vink {
+        height: 23px;
+        width: 33px;
+    }
+    
+    .downloadbutton {
+        position: absolute;
+        width: 195px;
+        height: 40px;
+        margin-right: 10px;
+        left: 60%;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        font-family: 'Montserrat';
+        font-size: 1em;
+        font-weight: 800;
+        display: inline-block;
+    }
+    
+    .download {
+        padding-right: 20px;
+    }
+    
+    .downloadlogo {
+        position: absolute;
+        left: 65%;
+        background-color: black;
+        width: 50px;
+        height: 20px;
+        padding-left: 17px;
+        margin-top: 8px;
+        margin-right: 3%;
+        border-radius: 7px;
+        display: none;
+    }
+    
+    .button-intro {
+        position: absolute;
+        display: inline-block;
+        margin-right: 20px;
+        left: 78%;
+        width: 114px;
+        height: 40px;
+        border-radius: 50px;
+        border: none;
+        background-color: rgb(255, 175, 227);
+        color: rgb(204, 0, 133);
+        font-size: 1em;
+        font-weight: 800;
+    }
+    
+    .button-workshop {
+        position: absolute;
+        display: inline-block;
+        margin-right: 20px;
+        left: 76%;
+        width: 146px;
+        height: 40px;
+        border-radius: 50px;
+        border: none;
+        background-color: rgb(209, 231, 255);
+        color: rgb(29, 0, 255);
+        font-size: 1em;
+        font-weight: 800;
+    }
+    
+    .ui-accordion-header {
+        color: rgb(75, 75, 75);
+        border: 1px solid rgb(235, 235, 235);
+        background-color: white;
+        margin: 0 auto;
+        width: 85%;
+    }
+    
+    .ui-accordion-header-active {
+        border: 1px solid rgb(29, 0, 255);
+        color: rgb(29, 0, 255);
+    }
+    
+    .ui-accordion-header-active .dichtswitch {
+        display: none;
+    }
+    
+    .ui-accordion-header .dichtswitch {
+        display: inline;
+    }
+    
+    .ui-accordion-header .open {
+        display: none;
+    }
+    
+    .ui-accordion-header-active .open {
+        display: inline;
+    }
+    
+    .ui-accordion-header .dicht {
+        display: inline;
+    }
+    
+    .ui-accordion-header-active .dicht {
+        display: none;
+    }
+    /* ///video accordion  */
+    
+    .video {
+        position: relative;
+        margin: 0 auto;
+        width: 88%;
+    }
+    
+    .video-js {
+        margin: 0 auto;
+        width: 100%;
+        height: 640px;
+        background-color: white;
+    }
+    
+    .rewindbutton {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        margin-left: 30%;
+        margin-top: 290px;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background: none;
+        border: none;
+    }
+    
+    .playbuttons {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        margin-left: 45%;
+        margin-top: 275px;
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        background: white;
+        border: none;
+    }
+    
+    .playbuttons.active .play {
+        background-image: url(../img/pause@2x.png);
+    }
+    
+    .play {
+        background-image: url(../img/play-btn@2x.png);
+        width: 100%;
+        height: 60%;
+        background-size: 100%;
+        background-position: center;
+    }
+    
+    .check {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        margin-left: 63%;
+        margin-top: 290PX;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background: none;
+        border: none;
+    }
+    
+    .video:hover .rewindbutton,
+    .video:hover .playbuttons,
+    .video:hover .check {
+        display: block;
+    }
+    /* ///popup//// */
+    
+    .popup {
+        visibility: hidden;
+        position: absolute;
+        font-family: "Montserrat";
+        z-index: 2;
+        background-color: rgb(255, 175, 227);
+        color: rgb(204, 0, 133);
+        width: 300px;
+        height: 100px;
+        left: 30%;
+        top: 30%;
+        font-size: 1.1em;
+        text-align: center;
+        padding-top: 5%;
+        border-radius: 10px;
+    }
+    
+    .popup.active {
+        visibility: visible;
+    }
+    
+    .close {
+        position: relative;
+        font-family: "Montserrat";
+        width: 100px;
+        background-color: rgb(204, 0, 133);
+        border-radius: 10px;
+        color: white;
+        margin-top: 10%;
+        margin-left: 12%;
+    }
+    /* ////////support/////////// */
+    
+    #support {
+        width: 90%;
+        margin: 0 auto;
+        background-color: white;
+    }
+    
+    h2 {
+        font-family: 'Playfair Display';
+        font-weight: bold;
+        float: left;
+        font-size: 3em;
+        color: rgb(29, 0, 255);
+        margin-left: 6%;
+        margin-top: 20px;
+        line-height: 1.5em;
+    }
+    /* personen */
+    
+    .profiel {
+        float: left;
+        width: 400px;
+        height: 230px;
+        margin-right: 100px;
+        margin-top: 50px;
+    }
+    
+    .personenkolom1 {
+        position: relative;
+        width: 1000px;
+        height: 300px;
+        margin-left: 6%;
+        /* margin-top: 50px; */
+    }
+    
+    .personenkolom2 {
+        position: relative;
+        width: 1000px;
+        height: 300px;
+        margin-left: 6%;
+    }
+    
+    .foto1 {
+        /* position: absolute; */
+        background-image: url(../img/kal-visuals-592091-unsplash@2x.jpg);
+        float: left;
+        margin-bottom: 20px;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        background-size: cover;
+    }
+    
+    .foto2 {
+        /* position: absolute; */
+        background-image: url(../img/giorgio-encinas-781653-unsplash@2x.jpg);
+        float: left;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        background-size: cover;
+    }
+    
+    .foto3 {
+        background-image: url(../img/norman-toth-177973-unsplash@2x.jpg);
+        float: left;
+        /* position: absolute; */
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        background-size: cover;
+    }
+    
+    .foto4 {
+        background-image: url(../img/alina-kovalchuk-1143928-unsplash@2x.jpg);
+        float: left;
+        /* position: absolute; */
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        background-size: cover;
+    }
+    
+    h5 {
+        float: right;
+        /* position: absolute; */
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 1.2em;
+        margin-right: 40px;
+        padding-bottom: 10px;
+    }
+    
+    h6 {
+        /* position: absolute; */
+        float: right;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        font-size: 1.2em;
+        color: rgb(235, 235, 235);
+        /* left: 200px;
+top: 50px; */
+    }
+    
+    .email {
+        position: relative;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        height: 40px;
+        width: 117px;
+        font-size: 1em;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        top: 10px;
+        left: 30px
+    }
+    /* ///////////uitdaging/////////// */
+    
+    #uitdaging {
+        /* float: right; */
+        position: initial;
+        height: 500px;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(to right, rgb(255, 175, 227, 0.8), rgb(204, 0, 133, 1)), url(../img/nicole-wolf-1339717-unsplash@2x.jpg);
+        position: inherit;
+        padding-top: 150px;
+        background-size: cover;
+    }
+    
+    #button-uitdaging {
+        float: left;
+        color: rgb(255, 175, 227);
+        font-family: 'Montserrat';
+        width: 271px;
+        height: 58px;
+        background-color: rgb(29, 0, 255);
+        border-radius: 10px;
+        font-size: 1.3em;
+        font-weight: 500;
+        border: none;
+        margin-left: 300px;
+        margin-top: 50px;
+    }
+    
+    .uitdaging-tekst {
+        float: left;
+        width: 60%;
+        margin-left: 200px;
+        font-family: 'Montserrat';
+        line-height: 1.4em;
+        color: white;
+        font-weight: normal;
+    }
+    
+    #kader {
+        width: 80%;
+        margin: 0 auto;
+    }
+    /*/////////// footer//////////// */
+    
+    footer {
+        position: relative;
+        height: 126px;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+    }
+    /* //toggle */
+    
+    .black {
+        background-color: black !important;
+        color: white;
+    }
+    
+    #toggle {
+        position: absolute;
+        right: 20px;
+        top: 43px;
+        border-radius: 50px;
+        background: none;
+        border: none;
+    }
+    /* //////////responsive//////// */
+    
+    @media screen and (max-width: 1240px) {
+        .downloadbutton {
+            width: 150px;
+            height: 35px;
+            font-size: 0.8em;
+            margin-top: 5px;
+        }
+        .button-workshop {
+            width: 128px;
+            height: 35px;
+            margin-top: 5px;
+        }
+        .button-intro {
+            width: 100px;
+            height: 35px;
+        }
+        .profiel {
+            margin-right: 20px;
+            width: 370px;
+        }
+        .personenkolom1,
+        .personenkolom2 {
+            width: 800px;
+        }
+        h5 {
+            font-size: 1.2em;
+        }
+        h6 {
+            font-size: 1em;
+            margin-right: 30px;
+        }
+        .email {
+            height: 30px;
+            width: 87px;
+            font-size: 0.8em;
+        }
+        .foto1,
+        .foto2,
+        .foto3,
+        .foto4 {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    
+    @media screen and (max-width: 1147px) {
+        h1 {
+            font-size: 3em;
+            margin-left: 15%;
+        }
+        .introtekst {
+            margin-left: 15%;
+            width: 50%;
+        }
+        .vink-button {
+            width: 70px;
+            height: 35px;
+        }
+        #button-uitdaging {
+            width: 271px;
+            height: 58px;
+            font-size: 1.3em;
+            margin-left: 25%;
+            margin-top: 50px;
+        }
+        .uitdaging-tekst {
+            width: 60%;
+            margin-left: 10%;
+            line-height: 1.4em;
+        }
+    }
+    
+    @media screen and (max-width: 1040px) {
+        .downloadbutton {
+            width: 107px;
+            height: 30px;
+            font-size: 0.5em;
+            margin-top: 5px;
+            margin-right: 5%;
+        }
+        .download {
+            width: 15px;
+            height: 15px;
+            padding-right: 10px;
+        }
+        .button-workshop {
+            width: 109px;
+            height: 30px;
+            margin-top: 5px;
+            font-size: 0.8em;
+        }
+        .button-intro {
+            width: 85px;
+            height: 30px;
+            margin-top: 5px;
+            font-size: 0.8em;
+        }
+        .video-js {
+            height: 460px;
+        }
+        .rewindbutton {
+            margin-left: 30%;
+            margin-top: 195px;
+        }
+        .check {
+            margin-left: 60%;
+            margin-top: 195px;
+        }
+        .playbuttons {
+            margin-left: 45%;
+            margin-top: 180px;
+            /* height: 90px;
+        width: 90px;
+         */
+        }
+        .profiel {
+            margin-right: 30px;
+        }
+        .uitdaging-tekst {
+            width: 50%;
+            margin-left: 10%;
+            line-height: 1.4em;
+        }
+    }
+    
+    @media screen and (max-width: 940px) {
+        .rewindbutton {
+            margin-left: 30%;
+            margin-top: 145px;
+        }
+        .check {
+            margin-left: 62%;
+            margin-top: 145px;
+        }
+        .playbuttons {
+            margin-left: 45%;
+            margin-top: 130px;
+        }
+        .video-js {
+            height: 410px;
+        }
+        .personenkolom1,
+        .personenkolom2 {
+            width: 700px;
+        }
+        .foto1,
+        .foto2,
+        .foto3,
+        .foto4 {
+            width: 130px;
+            height: 130px;
+        }
+        .profiel {
+            margin-right: 20px;
+            width: 330px;
+        }
+        h5 {
+            font-size: 1em;
+        }
+        h6 {
+            font-size: 0.8em;
+            margin-right: 40px;
+        }
+        .email {
+            height: 20px;
+            width: 58px;
+            font-size: 0.7em;
+        }
+    }
+    
+    @media screen and (max-width: 850px) {
+        #intro {
+            height: 500px;
+        }
+        li {
+            padding-right: 5%;
+        }
+        h1 {
+            margin-left: 15%;
+            font-size: 2.5em;
+            margin-left: 15%;
+        }
+        .introtekst {
+            width: 60%;
+            margin-left: 15%;
+        }
+        .rewindbutton {
+            margin-left: 30%;
+            margin-top: 170px;
+        }
+        .check {
+            margin-left: 62%;
+            margin-top: 170px;
+        }
+        .playbuttons {
+            margin-left: 45%;
+            margin-top: 155px;
+            /* height: 90px;
+        width: 90px;
+         */
+        }
+        .video-js {
+            height: 380px;
+        }
+        h2 {
+            font-size: 2.8em;
+        }
+        .vink-button {
+            width: 50px;
+            height: 25px;
+        }
+        .vink {
+            width: 25px;
+            height: 18px;
+        }
+        .button-workshop {
+            width: 91px;
+            height: 25px;
+            margin-top: 8px;
+            margin-right: 10px;
+            font-size: 0.7em;
+        }
+        .button-intro {
+            width: 71px;
+            height: 25px;
+            margin-top: 8px;
+            font-size: 0.7em;
+        }
+        .downloadbutton {
+            width: 89px;
+            height: 25px;
+            font-size: 0.6em;
+            margin-top: 8px;
+            margin-left: 30px;
+        }
+        .download {
+            display: none;
+        }
+        .video-js {
+            /* height: ; */
+        }
+        .personenkolom1,
+        .personenkolom2 {
+            margin-left: 0px;
+            width: 620px;
+        }
+        .profiel {
+            margin-right: 5px;
+            width: 290px;
+            height: 180px;
+        }
+        .foto1,
+        .foto2,
+        .foto3,
+        .foto4 {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    
+    @media screen and (max-width: 750px) {
+        .rewindbutton {
+            margin-left: 30%;
+            margin-top: 125px;
+        }
+        .check {
+            margin-left: 62%;
+            margin-top: 125px;
+        }
+        .playbuttons {
+            margin-left: 45%;
+            margin-top: 110px;
+        }
+        .video-js {
+            height: 335px;
+        }
+        .downloadbutton {
+            display: none;
+        }
+        .download {
+            display: inline;
+        }
+        .downloadlogo {
+            width: 50px;
+            height: 25px;
+            padding-left: 17px;
+            margin-left: 20px;
+            border-radius: 7px;
+            display: inline;
+        }
+        #button-uitdaging {
+            width: 233px;
+            height: 50px;
+            font-size: 1.2em;
+            margin-right: 5%;
+            margin-top: 20px;
+        }
+        .uitdaging-tekst {
+            width: 50%;
+            margin-left: 10%;
+            line-height: 1.4em;
+        }
+    }
+    
+    @media screen and (max-width: 710px) {
+        #intro {
+            height: 550px;
+        }
+        h2 {
+            font-size: 2.5em;
+        }
+        .video-js {
+            height: 320px;
+        }
+        h4 {
+            font-size: 0.8em;
+            padding-left: 15px;
+            padding-bottom: 30px;
+        }
+        .dicht,
+        .open,
+        .dichtswitch {
+            padding-right: 20px;
+            height: 25px;
+        }
+        .ui-accordion-header {
+            height: 20px;
+        }
+        .vink-button {
+            width: 40px;
+            height: 20px;
+        }
+        .vink {
+            width: 20px;
+            height: 15px;
+        }
+        .downloadbutton {
+            display: none;
+        }
+        /* .download {
+        display: inline;
+    } */
+        .downloadlogo {
+            height: 20px;
+            width: 40px;
+            padding-left: 12px;
+            margin-right: 0px;
+            border-radius: 7px;
+            display: inline;
+        }
+        .button-workshop {
+            width: 72px;
+            height: 20px;
+            margin-top: 8px;
+            margin-right: 10px;
+        }
+        .button-intro {
+            width: 57px;
+            height: 20px;
+            margin-top: 8px;
+        }
+        .personenkolom1,
+        .personenkolom2 {
+            margin-left: 0px;
+            width: 250px;
+        }
+        .profiel {
+            margin-right: 5px;
+            width: 350px;
+            height: 180px;
+        }
+        .foto1,
+        .foto2,
+        .foto3,
+        .foto4 {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        h1 {
+            font-size: 2em;
+            margin-left: 15%;
+        }
+        .introtekst {
+            margin-left: 15%;
+            width: 60%;
+        }
+        .rewindbutton {
+            margin-left: 29%;
+            margin-top: 110px;
+        }
+        .check {
+            margin-left: 58%;
+            margin-top: 110px;
+            width: 20px;
+        }
+        .playbuttons {
+            margin-left: 45%;
+            margin-top: 110px;
+            height: 60px;
+            width: 60px;
+        }
+        .popup {
+            width: 250px;
+            height: 100px;
+            left: 20%;
+            top: 25%;
+            text-align: center;
+            padding-top: 10%;
+            border-radius: 10px;
+        }
+        .video-js {
+            height: 270px;
+        }
+    }
+    
+    @media screen and (max-width: 530px) {
+        h1 {
+            margin-top: -5px;
+        }
+        .introtekst {
+            font-size: 0.9em;
+        }
+        li {
+            padding-right: 3%;
+        }
+        ul {
+            font-size: 0.8em;
+            padding: 40px 25px;
+        }
+        .rewindbutton {
+            margin-left: 26%;
+            margin-top: 80px;
+        }
+        .check {
+            margin-left: 60%;
+            margin-top: 80px;
+            width: 20px;
+        }
+        .playbuttons {
+            margin-left: 45%;
+            margin-top: 80px;
+            height: 60px;
+            width: 60px;
+        }
+        .video-js {
+            height: 235px;
+        }
+        .dicht,
+        .open,
+        .dichtswitch {
+            padding-right: 5px;
+            padding-top: 5px;
+            height: 15px;
+        }
+        h4 {
+            font-size: 0.7em;
+            padding-left: 15px;
+            padding-bottom: 30px;
+        }
+        .popup {
+            width: 250px;
+            height: 100px;
+            left: 23%;
+            top: 25%;
+            text-align: center;
+            padding-top: 10%;
+            border-radius: 10px;
+        }
+        .button-workshop {
+            width: 45px;
+            height: 15px;
+            margin-top: 8px;
+            margin-left: 15px;
+            padding-left: 3px;
+            font-size: 0.3em;
+        }
+        .button-intro {
+            width: 40px;
+            height: 15px;
+            margin-top: 8px;
+            margin-left: 12px;
+            font-size: 0.4em;
+        }
+        .downloadlogo {
+            height: 15px;
+            width: 30px;
+            font-size: 0.5em;
+            padding-left: 7px;
+            margin-top: 8px;
+            margin-left: 25px;
+            border-radius: 7px;
+            display: inline;
+        }
+        .download {
+            height: 10px;
+            width: 10px;
+            padding-left: 3px;
+        }
+        .vink-button {
+            width: 30px;
+            height: 15px;
+        }
+        .vink {
+            width: 15px;
+            height: 10px;
+        }
+        .personenkolom1,
+        .personenkolom2 {
+            margin-left: 0px;
+            width: 200px;
+        }
+        .kader {
+            width: 500px;
+        }
+        #button-uitdaging {
+            width: 185px;
+            height: 40px;
+            font-size: 1.1em;
+            margin-right: 10%;
+            margin-top: 20px;
+        }
+        .uitdaging-tekst {
+            width: 70%;
+            margin-left: 20%;
+            line-height: 1.4em;
+            font-size: 0.9em;
+        }
+    }
+    /* mobiel formaat */
+    
+    @media screen and (max-width: 414px) {
+        #intro {
+            height: 650px;
+        }
+        .introtekst {
+            width: 60%;
+        }
+        .rewindbutton {
+            margin-left: 29%;
+            margin-top: 60px;
+        }
+        .check {
+            margin-left: 58%;
+            margin-top: 60px;
+            width: 20px;
+        }
+        .playbuttons {
+            margin-left: 45%;
+            margin-top: 60px;
+            height: 60px;
+            width: 60px;
+        }
+        .video-js {
+            height: 185px;
+        }
+    }
+    /* VIDEO JS  */
+    /* css */
+    /* 
+.video {
+position: relative;
+margin: 0 auto;
+width: 595px;
+}
+
+.video-js {
+margin: 0 auto;
+width: 595px;
+height: 335px;
+margin-bottom: 50px;
+}
+
+#play1 {
+position: absolute;
+z-index: 1;
+font-family: Montserrat;
+margin-top: 310px;
+margin-left: 0;
+height: 25px;
+width: 50px;
+color: white;
+background-color: rgba(6, 84, 113, 0.8);
+}
+
+#pauze1 {
+position: absolute;
+z-index: 1;
+font-family: Montserrat;
+margin-top: 310px;
+margin-left: 55px;
+height: 25px;
+width: 50px;
+color: white;
+background-color: rgba(6, 84, 113, 0.3);
+}
+
+#play2 {
+position: absolute;
+z-index: 1;
+font-family: Montserrat;
+margin-top: 310px;
+margin-left: 0;
+height: 25px;
+width: 50px;
+color: white;
+background-color: rgba(6, 84, 113, 0.8);
+}
+
+#pauze2 {
+position: absolute;
+z-index: 1;
+font-family: Montserrat;
+margin-top: 310px;
+margin-left: 55px;
+height: 25px;
+width: 50px;
+color: white;
+background-color: rgba(6, 84, 113, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+.video-js {
+width: 400px;
+height: 225px;
+}
+.video {
+width: 400px;
+} 
+#play1,
+#pauze1,
+#play2,
+#pauze2 {
+margin-top: 200px;
+}
+} */
+    /* 
+html
+
+<div class="video">
+
+<h2>Spel 1 </h2>
+<button id="play1">Play</button>
+<button id="pauze1">Pauze</button>
+
+<video class="video-js">
+<source src="video/tutorial1.mp4" type="video/mp4">   
+</video>
+
+<div class="clear"></div>
+</div> */
